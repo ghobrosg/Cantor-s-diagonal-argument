@@ -1,0 +1,23 @@
+Cantor's diagonal argument is a proof technique used in mathematics, specifically in set theory, to demonstrate that some infinite sets are larger than others.
+
+Cantor's diagonalization argument is employed to show that certain sets are uncountably infinite, meaning they have more elements than the set of natural numbers (1, 2, 3, ...), which is countably infinite.
+
+The argument is often applied to demonstrate the uncountability of the real numbers. 
+It begins by assuming that the set of real numbers between 0 and 1 can be listed or put into a one-to-one correspondence with the natural numbers. 
+This would mean that you could write down all the real numbers in a list: r1, r2, r3, ..., where each number represents a real number between 0 and 1.
+
+Cantor's diagonal argument works by constructing a number that is not in this list, thereby contradicting the assumption that all real numbers in the interval [0, 1] can be listed.
+
+Here's a simplified step-by-step explanation of Cantor's diagonal argument:
+
+Assume you have a list that claims to contain all the real numbers between 0 and 1.
+Write down the numbers in the list in an array, where each row represents a number in the list.
+Form a new number by taking the diagonal elements of this array. That is, take the first digit after the decimal point of the first number, the second digit after the decimal point of the second number, and so on.
+Modify this number by changing each digit to a different digit (for example, increment it by 1 modulo 10 or change 0 to 1 and 1 to 0).
+This new number is different from every number in the list because it differs from each number in the list at least in one decimal place.
+Hence, the list cannot contain all the real numbers between 0 and 1, proving that there are more real numbers in that interval than there are natural numbers.
+The key insight here is that by constructing a number that differs from every number in the list in at least one decimal place, Cantor shows that the assumption of listing all real numbers in the interval [0, 1] is flawed. Therefore, the set of real numbers between 0 and 1 is uncountably infinite and cannot be put into a one-to-one correspondence with the natural numbers.
+
+Cantor's diagonalization argument has far-reaching implications in mathematics, demonstrating the existence of different sizes of infinity and playing a crucial role in set theory and the understanding of infinite sets.
+
+The algorithm I wrote shows a simple application of Cantor's diagonal argument using only numbers with 10 decimal places.
